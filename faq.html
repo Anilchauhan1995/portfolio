@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="">
+  <title>Food supply</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="assets/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+
+<!-- jQuery library -->
+<script src="assets/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="assets/bootstrap.min.js"></script>
+
+<body>
+  <header>
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="200">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="logo">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png"></a>
+        </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-center">
+                <li class="active" >
+                    <a href="#page-top"><i class="fa fa-black-tie"></i> Corporate - 25% OFF</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#portfolio"><i class="fa fa-first-order"></i> Bulk Order</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#about"><i class="fa fa-percent"></i> Deals</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact"><i class="fa fa-heart"></i> Favourites</a>
+                </li>
+                 <li class="page-scroll">
+                    <a href="#contact"><i class="fa fa-shopping-cart"></i> Cart</a>
+                </li> 
+                 <li class="page-scroll">
+                    <a href="#contact"><i class="fa fa-user-circle" ></i> Sign In</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="page-scroll">
+                   <input type="text" placeholder="Location.." class="form-control">
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+</header>
+
+<!-- 
+<section class="bg-image">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="overlay">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br> -->
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="faq_heading">
+          <h2 class="support">Help & Support</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="vertical_tab">
+          <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'vtab1')" id="defaultOpen"><br><br> Help with Active Orders</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab2')">Help with Delivered Orders</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab3')">Payment & Refunds</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab4')">Referral, Coupons & BOX8 Money</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab5')">8PASS Query</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab6')">Account Settings</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab7')">FAQs</button>
+  <button class="tablinks" onclick="openCity(event, 'vtab8')">Desk Delight (Corporate) Offer</button>
+</div>
+
+<div id="vtab1" class="tabcontent">
+    <h3 > Help with Active Orders</h3>
+
+  <div class="accordion collapsable">
+      <div class="tab1">How do Coupon Codes work? </div>
+      <div class="tab_text" style="display: block;"><p>If you've got a coupon code, simply add products to your cart, and head to the check out page. Before making payment, add the coupon code in the 'Have a coupon code?' box. If your coupon code is valid, the coupon code will be applied</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+<div id="vtab2" class="tabcontent">
+    <h3 class=""> Help with Delivered Orders</h3>
+  <div class="accordion collapsable">
+      <div class="tab1">My order had some items missing or incorrect food items were delivered to me.</div>
+      <div class="tab_text" style="display: block;"><p>If you received something you didn't order, or there was something missing, kindly get in touch with our Customer Support team via Chat or email us at talk@box8.in</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+<div id="vtab3" class="tabcontent">
+    <h3 class="">  Payment & Refunds</h3>
+  <div class="accordion collapsable">
+      <div class="tab1">I want to request for a refund/Cashback. </div>
+      <div class="tab_text" style="display: block;"><p>We understand your concern. Please connect with us via chat or write to us at talk@box8.in & we promise to assist you immediately.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+<div id="vtab4" class="tabcontent">
+    <h3 class=""> Referral, Coupons & BOX8 Money</h3>
+  <div class="accordion collapsable">
+      <div class="tab1">How do Coupon Codes work?</div>
+      <div class="tab_text" style="display: block;"><p>If you've got a coupon code, simply add products to your cart, and head to the check out page. Before making payment, add the coupon code in the 'Have a coupon code?' box. If your coupon code is valid, the coupon code will be applied</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+<div id="vtab5" class="tabcontent">
+    <h3 class=""> 8PASS Query</h3>
+ <div class="accordion collapsable">
+      <div class="tab1">What is 8PASS? </div>
+      <div class="tab_text" style="display: block;">8PASS is a special supersaver membership program that gives you FLAT 25% OFF upto Rs. 300 on each order. There is no minimum order value required (other than the minimum order value of an outlet which is Rs.99). There are 2 kinds of 8PASS - 8PASS TRIAL & 8PASS PRO. In the TRIAL version, you get 25% OFF on 5 orders & validity of 90 days, while in the PRO version you get 25% OFF on all orders & validity of 180 days.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+<div id="vtab6" class="tabcontent">
+    <h3 class="">Account Settings</h3>
+ <div class="accordion collapsable">
+      <div class="tab1">I forgot my password. What should I do?</div>
+      <div class="tab_text" style="display: block;"><p>If you forgot your password, you can alternatively login via OTP using your mobile number, without any hassle. To change your password follow these steps: 1. Tap on Forgot Password? button on your log-in screen. 2. Enter your registered Email ID or Phone Number 3. You'll receive an email/SMS with a unique verification code. 4. Use the verification code to create a new password. Do not share your password with others. Remember, BOX8 support will never ask for your password.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+<div id="vtab7" class="tabcontent">
+    <h3 class="">   FAQs</h3>
+ <div class="accordion collapsable">
+      <div class="tab1">How do I view my Order History? Where can I download the invoice of my order? </div>
+      <div class="tab_text" style="display: block;"><p>Head to MANAGE ORDERS section to view your order history. Click on the 'VIEW DETAILS' button present on a specific order to download the invoice.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+<div id="vtab8" class="tabcontent">
+    <h3 class="">Desk Delight (Corporate) Offer</h3>
+ <div class="accordion collapsable">
+      <div class="tab1">Can I order individually or is this only for corporate ordering?</div>
+      <div class="tab_text" style="display: block;"><p>Yes, you can definitely order for yourself! The Desk Delight can be availed by every employee of the organization as long as the delivery address is the registered office address.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+
+      </div>  
+
+      <div class="tab1">Can I modify my order?</div>
+      <div class="tab_text"><p>An order can be cancelled before the preparation is started. Once that is done, a new order can be placed again as per the modifications. If the order is in process of being prepared, we can't assure that we'll be able to change your order.</p>
+          <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+
+      </div>  
+
+      <div class="tab1">My order hasn't reached but it shows Delivered!</div>
+      <div class="tab_text">
+        <p>If the app or an email receipt shows that your order's been delivered, without you having received it, here's what you can do: 1. Track the order via BOX8 app/web to see the exact location of Delivery Master 2. Call the Delivery Master for an update. If you still can't locate your order, you can also reach out to our Customer Support team for assistance. We'll look into it right away.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to cancel my order!</div>
+      <div class="tab_text">
+        <p>An order can be cancelled only if the preparation hasn't been started. If the order is in process of being prepared, we can't cancel it. You can contact our support team for any further assistance.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">Can I change my delivery address?</div>
+      <div class="tab_text">
+        <p>You can contact our Customer Support team to change your delivery address. We can only accept such requests if the new address falls in the outlet's delivery zone.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I am unable to pay online.</div>
+      <div class="tab_text">
+        <p>Please email the screenshot of the error screen on our id - talk@box8.in. Our team will reach out to you soon..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">I want to switch my payment method</div>
+      <div class="tab_text">
+        <p>There's no option to change the payment method once an order is placed. You can change the payment method, only if the payment option selected is Cash On Delivery.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My payment was successfull but the order failed</div>
+      <div class="tab_text">
+        <p>In such a case, please try & place another order. Rest assured, we'll automatically initiate the refund process of your payment. The banks usually take 6-7 days for the money to reflect in your account.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+         <div class="tab1">My order was very late.</div>
+      <div class="tab_text">
+        <p>We sincerely apologize for the inconvenience. This is not the experience we aim to provide & we promise to make it up to you. For assistance, leave a review for us on app/web or get in touch with our Customer Support team.</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+       <div class="tab1">Why was my order cancelled?</div>
+      <div class="tab_text">
+        <p>An order might be canceled for one of these reasons: 1. The outlet ran out of one (or more) items you ordered 2. The outlet couldn't process your order due to technical reasons beyond our control 3. Our Delivery person couldn't get in touch with you or find the address mentioned 4. The coupon code was not applied 5. The order is already placed & this is a duplicate order 6. Our outlets are currently not serving in your locality A cancellation message is sent once our Delivery person updates us that they can't reach you after multiple attempts. We request you to keep your phone nearby so that you can be reached if needed. In case of cancellation based on points 1 & 2, the order amount will be refunded in 4-6 days..</p>
+        <a href="" class="btn btn-default"> Write to Us </a>
+        <a href="" class="btn btn-default"> CHAT WITH US </a>
+      </div>
+  </div>
+</div>
+
+
+
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section> 
+ 
+
+<br>
+<section class="footer_top">
+  <div class="container relative_container">
+    <div class="row border_top absolute_row">
+      <div class="col-md-9">
+        <div class="bg-white">
+          <h2>Get started with the mobile app!</h2>
+          <p>Get Flat 50% OFF on first App Order.Code: APP50. Download Now!</p>
+          <div class="dwonload_btns">
+            <a href="" class="btn btn-default dwonload_button">Download on app store</a>
+            <a href="" class="btn btn-default">Download on play Store</a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-md-3">
+        <div class="right_img">
+          <figure>
+            <img src="images/phone.png" class="img-responsive">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="footer_logo">
+          <figure>
+             <a  href="index.html"><img src="images/logo.png"></a>
+          </figure>
+          <div class="footer_text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="column-box"><h5> Box8 </h5>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="faq.html">Help &amp; Support</a></li>
+            <li ><a href="contact.html">Contact us</a></li>
+            <li><a href="delivery.html">Delivery Policies </a></li>
+            <li><a href="privacy.html">Privacy Policies</a></li>
+            <li><a> We're Hiring </a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="col-md-3">
+        <div class="column-box"><h5> EXPLORE </h5>
+          <ul>
+            <li><a href="offer.html">OFFERS</a></li>
+            <li><a href="blog.html"> BLOG</a></li>
+            <li><a href="disclaimers.html">DISCLAIMERS</a></li>
+            <li><a>GIFT 8PASS </a></li>
+          </ul>
+        </div>
+      </div>
+
+        <div class="col-md-3">
+        <div class="column-box follow"><h5> FOLLOW</h5>
+          <ul>
+              <li><a href=""><i class="fa fa-facebook"></i></a></li>
+              <li><a href=""><i class="fa fa-twitter"></i></a></li>
+              <li><a href=""><i class="fa fa-dribbble"></i></a></li>
+                      <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fa fa-google"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <hr>
+  <div class="copyright text-center">
+    <p style="color: #999;">Copyright 2013 - 2020. Poncho Hospitality Pvt. Ltd. All rights reserved.   v2.1.13</p>
+    <br>
+  </div>
+</footer>
+
+<a id="button"></a>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js"></script>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+<script type="text/javascript">
+  var speed = 200 
+  $('.accordion .tab1').slideDown(speed)
+  
+  $('.accordion .tab1').on('click', function(){
+    var that = $(this)
+
+
+    // Expandable
+    if( that.parent().hasClass('expandable') ){
+
+        that.toggleClass('expanded').next('.tab_text').slideToggle(speed)
+      
+    // Collapsable
+    }else if(that.parent().hasClass('collapsable')){
+
+      if( !that.hasClass('expanded') ){
+        that.siblings('.tab1').removeClass('expanded').next('.tab_text').slideUp(speed)
+      }
+        
+        that.toggleClass('expanded').next('.tab_text').slideToggle(speed)
+   // Standard
+    }else{
+        // make sure its not collapsing itself and reappearing right after.
+      if( !that.hasClass('expanded') ){
+
+        that.siblings('.tab1').removeClass('expanded').next('.tab_text').slideUp(speed)
+        that.toggleClass('expanded').next('.tab_text').slideToggle(speed)
+      }
+    }
+
+    
+  })
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("ul li").click(function () {
+          $("ul li").removeClass("active")
+          $(this).addClass("active")
+        });
+      });
+      var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+    </script>
+</body>
+</html>
+
+
+
+<?php include 'footer.php';?>
